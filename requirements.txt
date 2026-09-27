@@ -1,0 +1,27 @@
+# --- Core RAG (pinned to tested versions) ---
+langchain==0.3.30
+langchain-community==0.3.31
+langchain-huggingface==0.3.1
+langchain-text-splitters==0.3.11
+langchain-chroma>=0.2
+chromadb==1.5.9
+sentence-transformers==5.1.2
+transformers==4.57.6
+torch --extra-index-url https://download.pytorch.org/whl/cpu
+huggingface-hub>=0.20
+
+# --- Document loaders ---
+pypdf==6.19.0
+beautifulsoup4==4.15.0
+unstructured==0.18.3
+
+# --- LLM (local, free) ---
+ollama==0.6.2
+
+# --- Demo UI (Hugging Face Spaces) ---
+gradio>=4.0
+
+# --- Eval / utils ---
+numpy>=1.26
+tqdm>=4.66
+python-dotenv>=1.0
