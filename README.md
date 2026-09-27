@@ -99,7 +99,10 @@ python app.py   # → http://localhost:7860
 
 ## 🖼️ Démo
 
-> Ajoutez ici 2 captures : question sur ToubaXarala + réponse avec sources.
+Question sur les documents ToubaXarala, réponse générée avec sources :
+
+![Question en cours](images/demo_1_question.png)
+![Réponse avec sources](images/demo_2_reponse.png)
 
 ## 🔌 API REST (socle pour un frontend React)
 
