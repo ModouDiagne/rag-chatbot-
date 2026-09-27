@@ -158,8 +158,17 @@ Montrez : README + `src/evaluate.py` + captures de `app.py`.
 
 ## 👤 Auteur
 
-**Modou Diagne** — en reconversion/progression IA (NLP → LLM).
-Projet 5 du parcours Phase 3 (LLMs & RAG). Ouvert aux retours, issues et opportunités.
+**Modou Diagne** — Ingénieur Logiciel orienté IA (Backend, Microservices, DevOps, Cloud, ML, GenAI, Sécurité).
+*Je construis des systèmes qui tiennent en production, pas des démos.*
+
+Près de 3 ans d'expérience : analyse métier, modélisation, architectures microservices / SOA / ERP, APIs robustes, bases relationnelles et réparties, sécurité applicative, cloud et CI/CD.
+Côté IA : ML classique, Deep Learning, NLP/BERT, LLM/RAG et agents — créés, entraînés, fine-tunés, évalués, puis exposés et opérés via API (MLOps).
+
+Actuellement au CCAK (Touba) sur le SIGU, ERP universitaire en microservices : backend, dashboards, volet Data (PV, classements, ANAQ-Sup — Python/Pandas, SQL).
+
+Basé au Sénégal, **full remote en priorité** : missions longues, CDI remote, freelance, collaborations ou co-construction produit.
+
+📩 Un système à concevoir ou une équipe à renforcer ? Message privé sur [LinkedIn](https://www.linkedin.com/).
 
 ## 📄 Licence
 
