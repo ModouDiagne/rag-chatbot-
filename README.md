@@ -173,3 +173,13 @@ Basé au Sénégal, **full remote en priorité** : missions longues, CDI remote,
 ## 📄 Licence
 
 MIT — réutilisez, citez, contribuez.
+
+## 🤝 Suggestions, critiques & contributions
+
+**Je suis ouvert à toute suggestion d'amélioration, critique ou idée — c'est comme ça qu'on progresse.**
+N'hésitez pas à ouvrir une [issue](https://github.com/ModouDiagne/rag-chatbot-/issues) :
+suggestion, bug, question, retour d'usage. Les PR sont bienvenues, même petites
+(typo, docs, exemples, optimisations).
+
+Pistes déjà identifiées : chunking sémantique, reranker, éval LLM-as-judge,
+Docker + CI, frontend React sur `api.py`.
