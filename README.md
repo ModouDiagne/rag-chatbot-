@@ -168,7 +168,7 @@ Actuellement au CCAK (Touba) sur le SIGU, ERP universitaire en microservices : b
 
 Basé au Sénégal, **full remote en priorité** : missions longues, CDI remote, freelance, collaborations ou co-construction produit.
 
-📩 Un système à concevoir ou une équipe à renforcer ? Message privé sur [LinkedIn](https://www.linkedin.com/).
+📩 Un système à concevoir ou une équipe à renforcer ? Message privé sur [LinkedIn](https://www.linkedin.com/in/modou-diagne-94b451247/).
 
 ## 📄 Licence
 
