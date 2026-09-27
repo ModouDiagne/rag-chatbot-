@@ -21,6 +21,10 @@ ollama==0.6.2
 # --- Demo UI (Hugging Face Spaces) ---
 gradio>=4.0
 
+# --- API REST (optionnel : futur frontend React) ---
+fastapi>=0.110
+uvicorn>=0.29
+
 # --- Eval / utils ---
 numpy>=1.26
 tqdm>=4.66

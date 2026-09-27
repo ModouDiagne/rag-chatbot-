@@ -97,6 +97,23 @@ python -m src.evaluate
 python app.py   # → http://localhost:7860
 ```
 
+## 🖼️ Démo
+
+> Ajoutez ici 2 captures : question sur ToubaXarala + réponse avec sources.
+
+## 🔌 API REST (socle pour un frontend React)
+
+```bash
+uvicorn api:app --host 0.0.0.0 --port 8000
+# Docs auto : http://localhost:8000/docs
+curl -X POST http://localhost:8000/ask \
+  -H "Content-Type: application/json" \
+  -d '{"question":"Que propose ToubaXarala ?","provider":"ollama"}'
+```
+
+`GET /health` → état de l'index · `POST /ask` → `{answer, sources, provider}`.
+Un frontend React/Next.js peut se brancher directement dessus (roadmap v2).
+
 **Variables d'environnement utiles :**
 
 | Variable | Défaut | Rôle |

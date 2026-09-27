@@ -34,13 +34,24 @@ def respond(message: str, history: list, k: int) -> tuple[str, list]:
     return reply, history
 
 
+# Habillage moderne (thème + CSS), sans quitter Gradio / HF Spaces.
+THEME = gr.themes.Soft(primary_hue="teal", secondary_hue="amber")
+CUSTOM_CSS = """
+.gradio-container { max-width: 900px !important; margin: auto; }
+.header { background: linear-gradient(90deg, #0f766e, #d97706); color: white;
+          padding: 18px 22px; border-radius: 12px; margin-bottom: 12px; }
+.header h1 { margin: 0; font-size: 1.5rem; }
+.header p { margin: 4px 0 0 0; opacity: 0.9; }
+.footer { text-align: center; color: #888; font-size: 0.8rem; margin-top: 10px; }
+"""
+
+
 def build_demo() -> gr.Blocks:
     """Construit l'interface de démonstration."""
-    with gr.Blocks(title="RAG Chatbot — vos documents") as demo:
-        gr.Markdown(
-            "# 🤖 RAG Chatbot — posez vos questions sur vos documents\n"
-            "Recherche sémantique (Chroma) + LLM local (Ollama/Mistral). "
-            "Chaque réponse cite ses sources."
+    with gr.Blocks(title="ToubaXarala — Assistant documents", theme=THEME, css=CUSTOM_CSS) as demo:
+        gr.HTML(
+            "<div class='header'><h1>🤖 ToubaXarala — Assistant documents</h1>"
+            "<p>Posez vos questions, chaque réponse cite ses sources.</p></div>"
         )
         with gr.Row():
             k = gr.Slider(1, 8, value=SETTINGS.top_k, step=1, label="Top-K passages")
@@ -52,9 +63,11 @@ def build_demo() -> gr.Blocks:
             additional_inputs=[k],
         )
         gr.Markdown(
-            "_Docs d'exemple : remboursement, support, livraison. "
-            "Ajoutez vos PDF/MD dans `data/documents/`, puis relancez l'indexation._"
+            "_Docs d'exemple : remboursement, support, livraison + documents ToubaXarala. "
+            "Recherche sémantique (Chroma) + LLM local (Ollama). "
+            "Sur CPU : envoyez une question à la fois._"
         )
+        gr.HTML("<div class='footer'>Projet 5 — RAG francophone · Chroma + Ollama · Modou Diagne</div>")
     return demo
 
 
